@@ -48,7 +48,17 @@ body nav .nav__items li a {
   font-size: 1.2rem;
   color: white;
 }
+body nav .open__nav {
+  cursor: pointer;
+}
 body nav .open__nav i {
+  font-size: 1.4rem;
+}
+body nav .close__nav {
+  cursor: pointer;
+  display: none;
+}
+body nav .close__nav i {
   font-size: 1.4rem;
 }
 body .first__section {
@@ -86,7 +96,7 @@ body .first__section .simple p {
 body .first__section .simple .btn {
   display: flex;
   gap: 1rem;
-  justify-content: space-between;
+  justify-content: center;
   cursor: pointer;
 }
 body .first__section .simple .btn .chrome {
@@ -157,6 +167,12 @@ body .second__section .bottom .heading div:first-child {
 body .second__section .bottom .details {
   display: grid;
 }
+body .second__section .bottom .details:last-child {
+  display: none;
+}
+body .second__section .bottom .details:nth-child(3) {
+  display: none;
+}
 body .second__section .bottom .details .image__svg {
   margin-top: 4rem;
   position: relative;
@@ -190,6 +206,268 @@ body .second__section .bottom .details .bookmark p {
 body .second__section .bottom .details .bookmark .more__info {
   display: none;
 }
+body .download {
+  width: 70%;
+  margin: 1rem auto;
+}
+body .third__section {
+  margin-top: 5rem;
+  display: grid;
+  gap: 2rem;
+}
+body .third__section .top {
+  text-align: center;
+}
+body .third__section .top h2 {
+  color: hsl(229, 31%, 21%);
+}
+body .third__section .top p {
+  margin-top: 1rem;
+  color: hsl(229, 8%, 60%);
+}
+body .third__section .bottom {
+  display: grid;
+  gap: 2rem;
+}
+body .third__section .bottom article {
+  box-shadow: 0 0.2rem 0.5rem rgba(83, 104, 223, 0.5);
+  border-radius: 0.4rem;
+}
+body .third__section .bottom article:hover {
+  box-shadow: none;
+}
+body .third__section .bottom article .top {
+  padding: 2rem;
+}
+body .third__section .bottom article .top h4 {
+  margin-top: 2rem;
+  color: hsl(229, 31%, 21%);
+}
+body .third__section .bottom article .bottom {
+  border-top: 0.5rem dotted hsl(229, 8%, 60%);
+  margin-top: 2rem;
+  padding: 1rem 2rem 2rem;
+}
+body .third__section .bottom article .bottom .add {
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #5368df;
+  border-radius: 0.4rem;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body .third__section .bottom article .bottom .add:hover {
+  border: 0.1rem solid #5368df;
+  background: transparent;
+}
+body .third__section .bottom article .bottom .add:hover a {
+  color: #5368df;
+}
+body .third__section .bottom article .bottom .add a {
+  color: white;
+}
+body .forth__section {
+  display: grid;
+  margin-top: 5rem;
+  place-items: center;
+}
+body .forth__section .top h2 {
+  font-weight: 400;
+  font-size: 2.5rem;
+  color: hsl(229, 31%, 21%);
+  text-align: center;
+}
+body .forth__section .top p {
+  color: hsl(229, 8%, 60%);
+  margin-top: 1rem;
+  text-align: center;
+}
+body .forth__section .bottom .faq {
+  border-bottom: 1px solid hsl(229, 8%, 60%);
+  padding: 1rem;
+}
+body .forth__section .bottom .faq .question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+body .forth__section .bottom .faq .question p {
+  color: hsl(229, 31%, 21%);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+body .forth__section .bottom .faq .question p:hover {
+  color: hsl(0, 94%, 66%);
+}
+body .forth__section .bottom .faq .question span i {
+  color: #5368df;
+  font-size: 2rem;
+}
+body .forth__section .bottom .faq .answer {
+  display: none;
+}
+body .forth__section .bottom .faq p {
+  color: hsl(229, 8%, 60%);
+}
+body .forth__section .more__info {
+  padding: 0.8rem 1rem;
+  background: #5368df;
+  display: inline-block;
+  border-radius: 0.3rem;
+  margin-top: 1rem;
+  cursor: pointer;
+}
+body .forth__section .more__info a {
+  color: aliceblue;
+}
+body .fifth__section .color {
+  padding: 4rem 1rem;
+  margin-top: 5rem;
+  display: grid;
+  place-items: center;
+  background-color: #5368df;
+}
+body .fifth__section .color .stay {
+  text-align: center;
+  color: white;
+}
+body .fifth__section .color .stay p {
+  text-transform: uppercase;
+  letter-spacing: 0.3rem;
+}
+body .fifth__section .color .stay h3 {
+  font-size: 2rem;
+  margin-top: 1rem;
+}
+body .fifth__section .color form {
+  display: grid;
+  margin-top: 2rem;
+}
+body .fifth__section .color form .email {
+  width: 80vw;
+}
+body .fifth__section .color form .email input {
+  width: 100%;
+  padding: 1rem;
+  border: none;
+  border-radius: 0.3rem;
+}
+body .fifth__section .color form .email input::placeholder {
+  color: hsl(229, 8%, 60%);
+}
+body .fifth__section .color form .email p {
+  color: hsl(0, 94%, 66%);
+  display: none;
+}
+body .fifth__section .color form button {
+  margin-top: 1.5rem;
+  width: 100%;
+  padding: 1rem;
+  color: white;
+  background-color: hsl(0, 94%, 66%);
+  border: none;
+  border-radius: 0.3rem;
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+body .fifth__section .color form button:hover {
+  border: 1px solid hsl(0, 94%, 66%);
+  background-color: aliceblue;
+  color: hsl(0, 94%, 66%);
+}
+body footer {
+  padding: 2rem;
+  background: hsl(229, 31%, 21%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+}
+body footer .logo__ul .logo {
+  margin-bottom: 1rem;
+}
+body footer .logo__ul ul {
+  display: grid;
+  place-items: center;
+  gap: 1rem;
+  cursor: pointer;
+}
+body footer .logo__ul ul a {
+  color: white;
+  transition: all 0.3s ease;
+}
+body footer .logo__ul ul a:hover {
+  color: hsl(0, 94%, 66%);
+}
+body footer .icon {
+  display: flex;
+  cursor: pointer;
+  margin-top: 1rem;
+  transition: all 0.3s ease;
+  gap: 2rem;
+}
+body footer .icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+body footer .icon i:hover {
+  color: hsl(0, 94%, 66%);
+}
+body .nav__item {
+  display: none;
+  position: fixed;
+  top: 0;
+  bottom: 0;
+  background-color: hsl(229, 31%, 21%);
+  right: 0;
+  left: 0;
+  padding: 2rem;
+}
+body .nav__item .lg {
+  display: flex;
+  justify-content: space-between;
+}
+body .nav__item .lg .close__nav {
+  cursor: pointer;
+}
+body .nav__item .lg .close__nav i {
+  font-size: 1.8rem;
+  color: white;
+}
+body .nav__item ul li {
+  margin-top: 2rem;
+  text-align: center;
+  padding: 1.5rem;
+  border-top: 1px solid white;
+}
+body .nav__item ul li:last-child {
+  cursor: pointer;
+  border: 2px solid white;
+  padding: 0.8rem;
+  border-radius: 0.5rem;
+}
+body .nav__item ul li a {
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  font-size: 1.2rem;
+  color: white;
+}
+body .nav__item .icon {
+  margin-left: 11rem;
+  display: flex;
+  cursor: pointer;
+  margin-top: 8rem;
+  transition: all 0.3s ease;
+  gap: 2rem;
+}
+body .nav__item .icon i {
+  color: white;
+  font-size: 1.5rem;
+}
+body .nav__item .icon i:hover {
+  color: hsl(0, 94%, 66%);
+}
 
 @media screen and (min-width: 550px) {
   body {
@@ -197,7 +475,7 @@ body .second__section .bottom .details .bookmark .more__info {
   }
   body .container {
     width: 88%;
-    margin: 2rem auto;
+    margin: 2rem;
   }
   body .first__section {
     text-align: left;
@@ -206,7 +484,7 @@ body .second__section .bottom .details .bookmark .more__info {
     gap: 3rem;
   }
   body .first__section .image__svg .image {
-    right: -2rem;
+    right: auto;
     width: 42vw;
   }
   body .first__section .image__svg .svg {
@@ -273,10 +551,101 @@ body .second__section .bottom .details .bookmark .more__info {
   body .second__section .bottom .details .bookmark .more__info a {
     color: aliceblue;
   }
+  body .download {
+    width: 80%;
+    margin: 3rem auto;
+  }
+  body .third__section .top {
+    text-align: center;
+  }
+  body .third__section .bottom {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+  }
+  body .third__section .bottom .firefox {
+    position: relative;
+    top: 3rem;
+  }
+  body .third__section .bottom .opera {
+    position: relative;
+    top: 6rem;
+  }
+  body .third__section .bottom article {
+    box-sizing: border-box;
+  }
+  body .third__section .bottom article .bottom {
+    border-top: 5px dotted hsl(229, 8%, 60%);
+    width: 26vw;
+    box-sizing: border-box;
+    padding: 0 1rem 2rem;
+  }
+  body .third__section .bottom article .bottom .add {
+    padding: 1rem;
+    display: flex;
+    width: 22vw;
+    text-align: center;
+    cursor: pointer;
+  }
+  body .third__section .bottom article .bottom .add a {
+    font-size: 0.8rem;
+  }
+  body .forth__section {
+    margin-top: 30%;
+  }
+  body .forth__section .top p {
+    margin-left: 10rem;
+    width: 60%;
+  }
+  body .forth__section .bottom {
+    margin-top: 2rem;
+  }
+  body .forth__section .bottom .faq:first-child {
+    border-top: 1px solid hsl(229, 8%, 60%);
+  }
+  body .fifth__section .color .stay h3 {
+    width: 40vw;
+  }
+  body .fifth__section .color form {
+    display: flex;
+    width: 50vw;
+    justify-content: center;
+    gap: 2rem;
+  }
+  body .fifth__section .color form button {
+    margin-top: 0;
+    width: 60%;
+  }
+  body .fifth__section .color form .input .email {
+    width: 40vw;
+  }
+  body .fifth__section .color form .input .email input {
+    width: 30%;
+  }
+  body footer {
+    justify-content: space-between;
+    flex-direction: row;
+  }
+  body footer .logo__ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+  body footer .logo__ul .logo {
+    margin-bottom: 0;
+  }
+  body footer .logo__ul ul {
+    display: flex;
+  }
+  body .nav__item .icon {
+    margin-left: 45%;
+  }
 }
 @media screen and (min-width: 900px) {
   body {
     /*background-color: greenyellow;*/
+    width: 100vw;
+    box-sizing: border-box;
   }
   body .container {
     width: 84%;
@@ -353,6 +722,34 @@ body .second__section .bottom .details .bookmark .more__info {
   }
   body .second__section .bottom .details .image__svg .svg {
     left: -6.4rem;
+  }
+  body .third__section {
+    margin-left: 18%;
+  }
+  body .third__section top {
+    width: 50%;
+  }
+  body .third__section top h2 {
+    text-align: start;
+  }
+  body .third__section .bottom {
+    display: flex;
+  }
+  body .third__section .bottom article {
+    width: 20vw;
+  }
+  body .third__section .bottom article .bottom {
+    width: 20vw;
+  }
+  body .third__section .bottom article .bottom .add {
+    width: 15vw;
+  }
+  body .forth__section {
+    margin-top: 20%;
+  }
+  body .forth__section .top p {
+    margin-left: 10rem;
+    width: 60%;
   }
 }
 

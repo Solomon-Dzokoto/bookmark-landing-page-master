@@ -14,6 +14,7 @@ body{
     outline: none;
     box-sizing: border-box;
     list-style: none;
+
   }
   .container{
     width: 90%;
@@ -55,6 +56,14 @@ body{
 
     }
     .open__nav{
+      cursor: pointer;
+      i{
+        font-size: 1.4rem;
+      }
+    }
+    .close__nav{
+      cursor: pointer;
+      display: none;
       i{
         font-size: 1.4rem;
       }
@@ -93,7 +102,7 @@ body{
   .btn{
     display: flex;
     gap: 1rem;
-    justify-content: space-between;
+    justify-content: center;
     cursor: pointer;
     .chrome{
       background-color: $Soft-Blue;
@@ -163,6 +172,12 @@ body{
      }
       }
       .details{display: grid;
+        &:last-child{
+          display:none;
+        }
+        &:nth-child(3){
+          display:none;
+        }
         .image__svg{
          margin-top: 4rem;
           position: relative;
@@ -199,15 +214,296 @@ body{
       }
     }
   }
-}
+  .download{
+  width: 70%;
+  margin: 1rem auto;
+  }
+  .third__section{
+    margin-top: 5rem;
+    display: grid;
+  gap: 2rem;
+    .top{
+      text-align: center;
+      h2{
+        color: $Very-Dark-Blue;      
+      }
+      p{
+        margin-top: 1rem;
+        color: $Grayish-Blue;
+      }
+    }
+    .bottom{
+      display: grid;
+      gap: 2rem;
+      article{
+        box-shadow: 0 .2rem .5rem rgb(83, 104, 223, 0.5);
+        border-radius: .4rem;
+        &:hover{
+          box-shadow: none;
+        }
+        .top{
+          padding: 2rem;
+       h4{
+        margin-top: 2rem;
+        color: $Very-Dark-Blue;
+       }
+        }
+        .bottom{
+          border-top: .5rem dotted $Grayish-Blue;
+          margin-top: 2rem;
+          padding: 1rem 2rem 2rem;
+          .add{
+            margin-top: 2rem;
+            padding: 1rem;
+            background: $Soft-Blue;
+            border-radius:.4rem;
+            text-align: center;
+            cursor: pointer;
+            transition: all .3s ease;
+            &:hover{
+             border: .1rem solid $Soft-Blue;
+              background: transparent;
+              a{
+                color: $Soft-Blue;
+              }
+            }
+            a{
+          color: white;
+            }
+          }
+        }
+      }
+    }
+  }
+  .forth__section{
+    display: grid;
+    margin-top: 5rem;
+    place-items: center;
+    .top{
+     h2{
+      font-weight: 400;
+      font-size: 2.5rem;
+      color: $Very-Dark-Blue;
+      text-align: center;
+     }
+     p{
+     color: $Grayish-Blue;
+    margin-top: 1rem;
+    text-align: center;
+    
+     }
+    }
+    .bottom{
+      .faq{
+        border-bottom: 1px solid $Grayish-Blue;
+        padding: 1rem;
+          
+        .question{
+          display: flex;
+         justify-content: space-between;
+         align-items: center;
+         p{
+          color: $Very-Dark-Blue;
+          cursor: pointer;
+          transition: all .3s ease;
+          &:hover{
+            color: $Soft-Red;
+           }
+        }
+         span{
+         
+          i{   
+            color: $Soft-Blue;       
+            font-size: 2rem;
+          }
+         }
+         }
+         .answer{
+          display: none;
+         }
+         p{
+          color: $Grayish-Blue;
+         }
+        }
+      }
+      .more__info{
+        padding: .8rem 1rem;
+            background: $Soft-Blue;
+            display: inline-block;
+            border-radius: .3rem;
+            margin-top: 1rem;
+            cursor: pointer;
+            a{
+              color: aliceblue;
+            }
+      }
+    }
+    .fifth__section{
+      .color{
+        padding: 4rem 1rem;
+        margin-top: 5rem;
+        display: grid;
+        place-items: center;
+        background-color: $Soft-Blue;
+        .stay{
+          text-align: center;
+          color: white;
+          p{
+            text-transform: uppercase;
+            letter-spacing: .3rem;         
+          }
+          h3{
+            font-size: 2rem;
+            margin-top: 1rem;
+          }
+        }
+        form{
+          display: grid;
+          margin-top: 2rem;
+          .email{
+            width: 80vw;
+            input{
+              width: 100%;
+              padding: 1rem;
+              border: none;
+              border-radius: .3rem;
+              &::placeholder{
+                color: $Grayish-Blue;
+              }
+            }
+            p{
+              color: $Soft-Red;
+              display: none;
+            }
+          }
+          button{
+            margin-top: 1.5rem;
+            width: 100%;
+              padding: 1rem;
+              color: white;
+              background-color: $Soft-Red;
+              border: none;
+              border-radius: .3rem;
+              transition: all .3s ease;
+              cursor: pointer;
+              &:hover{
+                border: 1px solid $Soft-Red;
+                background-color: aliceblue;
+                color: $Soft-Red;
+              }
+          }
+        }
+      }
+    }
+    footer{
+      padding: 2rem;
+      background: $Very-Dark-Blue;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 1rem;
+      .logo__ul{
+        .logo{
+          margin-bottom: 1rem;
+        }
+        ul{
+          display: grid;
+          place-items: center;
+          gap: 1rem;
+          cursor: pointer;
+          a{
+            color: white;
+            transition: all .3s ease;
+            &:hover{
+              color: $Soft-Red;
+            }
+          }
+        }
+      }
+    
+      .icon{
+        display: flex;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: all .3s ease;
+        gap: 2rem;
+       i{
+        color: white;
+        font-size: 1.5rem;
+        &:hover{
+          color: $Soft-Red;
+        }
+       }
+      }
+    }
+    .nav__item{
+      display: none;
+      position: fixed;
+      top: 0;
+      bottom: 0;
+      background-color: $Very-Dark-Blue;
+      right: 0;
+      left: 0;
+      padding: 2rem;
+      .lg{
+        display: flex;
+        justify-content: space-between;
+        .close__nav{
+          cursor: pointer;
+          i{
+            font-size: 1.8rem;
+            color: white;
+          }
+        }
+      }
+      ul{
+        li{
+          margin-top: 2rem;
+          text-align: center;
+          padding:1.5rem;
+          border-top: 1px solid white;
+          &:last-child{
+            cursor: pointer;
+              border:2px solid white;
+              padding: .8rem;
+              border-radius: .5rem;
+          }
+          a{
+            text-transform: uppercase;
+            letter-spacing: 1px;
+          font-size: 1.2rem;
+            color: white;
+           
+          }
+        }
+      }
+      .icon{
+        margin-left: 11rem;
+        display: flex;
+        cursor: pointer;
+        margin-top: 8rem;
+        transition: all .3s ease;
+        gap: 2rem;
+       i{
+        color: white;
+        font-size: 1.5rem;
+        &:hover{
+          color: $Soft-Red;
+        }
+       }
+      }
+     }
+  }
+
 
 
 @media screen and (min-width:550px){
 body{
   /*background-color: orchid;*/
+  
   .container{
     width: 88%;
-    margin: 2rem auto;
+    margin: 2rem ;
   }
   .first__section{
     text-align: left;
@@ -216,7 +512,7 @@ body{
    gap: 3rem;
    .image__svg{
     .image{
-      right: -2rem;
+      right: auto;
       width: 42vw;
     }
     .svg{
@@ -299,12 +595,120 @@ body{
     
      }
   }
+    .download{
+  width: 80%;
+  margin: 3rem auto;
+  }
+  .third__section{
+   .top{
+  text-align: center;
+   }
+    .bottom{
+      display: grid;
+     grid-template-columns: repeat(3,1fr);
+     .firefox{
+   position: relative;
+    top: 3rem;
+     }
+     .opera{
+      position: relative;
+      top: 6rem;
+     }
+    article{
+      box-sizing: border-box;
+      .bottom{
+        border-top: 5px dotted $Grayish-Blue;
+        width: 26vw;
+        box-sizing: border-box;
+        padding: 0 1rem 2rem;
+        .add{
+          padding: 1rem;
+          display: flex;
+          width: 22vw;
+          text-align: center;
+         cursor: pointer;
+          a{
+          font-size: .8rem;
+          }
+        }
+      }
+    }
+}
+}
+.forth__section{
+  margin-top: 30%;
+  .top{
+    p{
+   margin-left: 10rem;
+   width: 60%;
+    }
+  }
+  .bottom{
+    margin-top: 2rem;
+    .faq{
+      &:first-child{
+        border-top: 1px solid $Grayish-Blue;
+      }
+    }
+  }
+}
+.fifth__section{
+  .color{
+    .stay{
+      h3{
+        width: 40vw;
+      }
+    }
+    form{
+      display:flex ;
+      width: 50vw;
+      justify-content: center;
+      gap: 2rem;
+      button{
+        margin-top: 0;  
+         width: 60%;
+      }
+      .input{
+        .email{
+        width: 40vw;
+        input{
+          width: 30%;
+        }
+        }
+      }
+    }
+  }
+}
+ footer{
+justify-content: space-between;
+  flex-direction: row;
+  .logo__ul{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+  .logo{
+  margin-bottom: 0;
+  }
+   ul{
+   display: flex;
+  }
+  }
+ }
+ .nav__item{
+  .icon{
+    margin-left: 45%;
+  }
+ }
+ 
 }
 }
 
 @media screen and (min-width:900px){
 body{
   /*background-color: greenyellow;*/
+  width: 100vw;
+  box-sizing: border-box;
   .container{
     width: 84%;
     margin: 2rem auto;
@@ -396,5 +800,33 @@ body{
     }
   }
   }
+.third__section{
+top{
+width: 50%;
+h2{
+text-align: start;
+}}
+margin-left: 18%;
+.bottom{
+display: flex;
+article{
+ width: 20vw;
+  .bottom{
+ width: 20vw;
+ .add{
+ width:15vw;
+}}}
 }
 }
+.forth__section{
+  margin-top: 20%;
+  .top{
+    p{
+   margin-left: 10rem;
+   width: 60%;
+    }
+  }
+  
+}
+
+}}
