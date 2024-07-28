@@ -38,6 +38,9 @@
       <i class="ri-menu-line"></i>
     </div>
   </nav>
+
+  <!--END OF NAV-->
+
   <section class="first__section container">
     <div class="image__svg">
       <div class="image">
@@ -65,6 +68,9 @@
       </div>
     </div>
   </section>
+
+  <!--END OF FIRST SECTION-->
+
   <section class="second__section container">
     <div class="top">
       <h2>Features</h2>
@@ -75,11 +81,11 @@
     </div>
    <div class="bottom">
     <div class="heading">
-    <div class="title active">Simple Bookmarking</div >
-     <div class="title">Speedy Searching</div >
-     <div class="title">Easy Sharing</div >
+    <div class="title active" data-target="detail-1">Simple Bookmarking</div >
+     <div class="title" data-target="detail-2">Speedy Searching</div >
+     <div class="title" data-target="detail-3">Easy Sharing</div >
     </div>
-    <div class="details">
+    <div class="details" id="detail-1" >
       <div class="image__svg">
        <div class="image">
       <img src="images/illustration-features-tab-1.svg" alt="">
@@ -103,7 +109,7 @@
         </div>
       </div>
     </div>  
-     <div class="details">
+     <div class="details" id="detail-2" >
       <div class="image__svg">
        <div class="image">
       <img src="images/illustration-features-tab-2.svg" alt="">
@@ -127,7 +133,7 @@
         </div>
       </div>
     </div>   
-    <div class="details">
+    <div class="details" id="detail-3">
       <div class="image__svg">
        <div class="image">
       <img src="images/illustration-features-tab-3.svg" alt="">
@@ -153,6 +159,8 @@
     </div>
    </div>
   </section>
+<!--END OF SECOND SECTION-->
+
   <section class="third__section download">
   <div class="top">
     <h2>Download the extension</h2>
@@ -206,6 +214,7 @@
     </article>
    </div>
   </section>
+  <!--END OF THIRD SECTION-->
   <section class="forth__section container">
     <div class="top">
       <h2>
@@ -218,27 +227,27 @@
     </div>
     <div class="bottom">
       <div class="faq">
-       <div class="question">
+       <div class="question" data-focus="question-1">
         <p>What is Bookmark?</p>
         <span><i style="display:none" class="ri-arrow-drop-up-line" style="color:#ff0000;"></i></span>
         <span>
           <i class="ri-arrow-drop-down-line"></i>
         </span>
        </div>
-       <p class="answer">
+       <p class="answer" id="question-1">
         Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce tincidunt 
         justo eget ultricies fringilla. Phasellus blandit ipsum quis quam ornare mattis.
        </p>
       </div>
       <div class="faq">
-       <div class="question">
+       <div class="question" data-focus="question-2">
         <p>  How can I request a new browser?</p>
         <span><i style="display:none" class="ri-arrow-drop-up-line" style="color:#ff0000;"></i></span>
         <span>
           <i class="ri-arrow-drop-down-line"></i>
         </span>
        </div>
-       <p class="answer">
+       <p class="answer" id="question-2">
         Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, ultricies non ligula. 
         Suspendisse imperdiet. Vivamus luctus eros aliquet convallis ultricies. Mauris augue massa, 
         ultricies non ligula. Suspendisse imperdie tVivamus luctus eros aliquet convallis ultricies. 
@@ -246,27 +255,27 @@
        </p>
       </div>
       <div class="faq">
-       <div class="question">
+       <div class="question" data-focus="question-3">
         <p>Is there a mobile app?</p>
         <span><i style="display:none" class="ri-arrow-drop-up-line" style="color:#ff0000;"></i></span>
         <span>
           <i class="ri-arrow-drop-down-line"></i>
         </span>
        </div>
-       <p class="answer">
+       <p class="answer" id="question-3">
         Sed consectetur quam id neque fermentum accumsan. Praesent luctus vestibulum dolor, ut condimentum 
         urna vulputate eget. Cras in ligula quis est pharetra mattis sit amet pharetra purus. Sed 
         sollicitudin ex et ultricies bibendum.
        </p>
       </div><div class="faq">
-       <div class="question">
+       <div class="question" data-focus="question-4">
         <p>What about other Chromium browsers?</p>
         <span><i style="display:none" class="ri-arrow-drop-up-line"style="color:#ff0000;"></i></span>
         <span>
           <i class="ri-arrow-drop-down-line"></i>
         </span>
        </div>
-       <p class="answer">
+       <p class="answer" id="question-4">
         Integer condimentum ipsum id imperdiet finibus. Vivamus in placerat mi, at euismod dui. Aliquam 
         vitae neque eget nisl gravida pellentesque non ut velit.
        </p>
@@ -276,6 +285,8 @@
       <a href="#">  More Info</a>
     </div>
   </section>
+<!--END OF FORTH SECTION-->
+
   <section class="fifth__section">
     <div class="color">
       <div class="stay">
@@ -285,14 +296,19 @@
       <form action="/">
         <div class="email">
           <input type="email" placeholder="Enter your Email address" name="email" id="email">
-          <p>whoops, make sure it's an email</p>
+          <span class="error-icon"><i class="ri-error-warning-fill"></i></span> 
+          <p class="error">whoops, make sure it's an email</p>
         </div>
         <button type="submit">Contact Us</button>
       </form>
     </div>
    
   </section> 
+<!--END OF FIFTH SECTION-->
+
   <footer >
+
+
     <div class="logo__ul">
       <div class="logo">
         <img src="icons/logo-bookmark.svg" alt="">
@@ -308,6 +324,9 @@
       <i class="ri-twitter-fill"></i>
      </div>
   </footer>
+  <!--END OF FOOTER-->
+
+
   <div class="nav__item">
     <div class="lg">  
       <img src="icons/logo-bookmark.svg" alt="">
@@ -326,6 +345,7 @@
      <i class="ri-twitter-fill"></i>
     </div>
   </div>
+  <!--END OF NAV ITEMS-->
 
   <script src="script.js"></script>
 </body>

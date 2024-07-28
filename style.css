@@ -21,44 +21,12 @@ body nav {
   z-index: 10;
 }
 body nav .nav__items {
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  background-color: hsl(229, 31%, 21%);
-  z-index: -1;
   display: none;
-  place-content: center;
-  text-align: center;
-}
-body nav .nav__items li {
-  margin-top: -1rem;
-  padding: 4rem;
-  border-top: 1px solid white;
-}
-body nav .nav__items li:last-child {
-  cursor: pointer;
-  border: 2px solid white;
-  padding: 0.5rem;
-}
-body nav .nav__items li a {
-  text-transform: uppercase;
-  letter-spacing: 1px;
-  font-size: 1.2rem;
-  color: white;
 }
 body nav .open__nav {
   cursor: pointer;
 }
 body nav .open__nav i {
-  font-size: 1.4rem;
-}
-body nav .close__nav {
-  cursor: pointer;
-  display: none;
-}
-body nav .close__nav i {
   font-size: 1.4rem;
 }
 body .first__section {
@@ -494,6 +462,7 @@ body .nav__item .icon i:hover {
   }
   body .first__section .simple {
     margin-top: 3rem;
+    right: 0;
     order: -1;
   }
   body .first__section .simple .btn div {
@@ -520,6 +489,11 @@ body .nav__item .icon i:hover {
   body .second__section .bottom .heading div:first-child {
     border-top: none;
   }
+  body .second__section .bottom .details:last-child {
+    height: 60vh;
+    grid-template-columns: 1fr 1fr;
+    gap: 8rem;
+  }
   body .second__section .bottom .details {
     height: 60vh;
     grid-template-columns: 1fr 1fr;
@@ -532,6 +506,9 @@ body .nav__item .icon i:hover {
     width: 40vw;
   }
   body .second__section .bottom .details .bookmark {
+    position: absolute;
+    right: 0;
+    width: 40%;
     margin-top: 5rem;
   }
   body .second__section .bottom .details .bookmark h2 {

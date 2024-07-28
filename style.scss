@@ -25,45 +25,10 @@ body{
     justify-content: space-between;
     z-index: 10;
     .nav__items{
-      position: fixed;
-      top:0;
-     left: 0;
-     height: 100%;
-     width: 100%;
-     background-color: $Very-Dark-Blue;
-     z-index: -1;
-     display: none;
-     place-content: center;
-    text-align: center;
- 
-    li{
-      margin-top: -1rem;
-      padding:4rem;
-      border-top: 1px solid white;
-      &:last-child{
-        cursor: pointer;
-          border:2px solid white;
-          padding: .5rem;
-      }
-      a{
-        text-transform: uppercase;
-        letter-spacing: 1px;
-      font-size: 1.2rem;
-        color: white;
-       
-      }
-    }
-
+      display: none;
     }
     .open__nav{
       cursor: pointer;
-      i{
-        font-size: 1.4rem;
-      }
-    }
-    .close__nav{
-      cursor: pointer;
-      display: none;
       i{
         font-size: 1.4rem;
       }
@@ -523,7 +488,7 @@ body{
    }
    .simple{
    margin-top: 3rem;
-
+    right: 0;
  order: -1;
  .btn{
   div{
@@ -556,8 +521,13 @@ body{
          &:first-child{
           border-top: none;
          }
-        }
-       
+        } 
+      }
+      .details:last-child{
+        height: 60vh;
+        grid-template-columns: 1fr 1fr;
+        gap: 8rem;
+
       }
       .details{
         height: 60vh;
@@ -572,6 +542,9 @@ body{
           }
         }
         .bookmark{
+          position: absolute;
+          right: 0;
+          width: 40%;
           margin-top: 5rem;
           h2{
             text-align: start;
