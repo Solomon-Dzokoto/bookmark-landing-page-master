@@ -327,11 +327,26 @@ body{
           margin-top: 2rem;
           .email{
             width: 80vw;
+            position: relative;
+            .error-icon{
+            position: absolute;
+            right: 1rem;
+            top: .8rem;
+            color: $Soft-Red;
+            display: none;
+            }
             input{
               width: 100%;
               padding: 1rem;
               border: none;
               border-radius: .3rem;
+              &:invalid~.error{
+             display: block;
+              }
+              &:invalid{
+                border-color: $Soft-Red;
+               
+              }
               &::placeholder{
                 color: $Grayish-Blue;
               }

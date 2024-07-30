@@ -314,12 +314,26 @@ body .fifth__section .color form {
 }
 body .fifth__section .color form .email {
   width: 80vw;
+  position: relative;
+}
+body .fifth__section .color form .email .error-icon {
+  position: absolute;
+  right: 1rem;
+  top: 0.8rem;
+  color: hsl(0, 94%, 66%);
+  display: none;
 }
 body .fifth__section .color form .email input {
   width: 100%;
   padding: 1rem;
   border: none;
   border-radius: 0.3rem;
+}
+body .fifth__section .color form .email input:invalid ~ .error {
+  display: block;
+}
+body .fifth__section .color form .email input:invalid {
+  border-color: hsl(0, 94%, 66%);
 }
 body .fifth__section .color form .email input::placeholder {
   color: hsl(229, 8%, 60%);
